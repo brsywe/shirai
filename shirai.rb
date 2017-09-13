@@ -3,13 +3,13 @@
 Plugin.create(:shirai) do
 
   command(
-    :trump,
+    :shirai,
     name: '球審の白井です',
     condition: -> _ { true },
     visible: true,
     role: :timeline
   ) do |opt|
-    trump = [
+    shirai = [
       "えー、球審の白井です（半ギレ）.",
       "ｱｱｱｱｯｲｯ!!!",
       "ｱｱｱｱｱｱｯｯｯｲｲｲｯｯ!!!",
@@ -21,7 +21,7 @@ Plugin.create(:shirai) do
     ]
     opt.messages.each do |message|
       to_name = message.user.idname
-      msg = "@#{to_name} #{trump.sample}"
+      msg = "@#{to_name} #{shirai.sample}"
       Service.primary.post(:message => msg, :replyto => message)
     end
   end
