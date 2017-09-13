@@ -1,2 +1,2 @@
-# trump
-Donald John Trump先生のご活躍をお祈りするmikutterプラグイン
+# shirai
+球審の白井さんのご活躍をお祈りするmikutterプラグイン
